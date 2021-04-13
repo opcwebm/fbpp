@@ -136,6 +136,6 @@ $myfbpp = new FBPP();
 	</script>"; ?>
 <script src="/_assets/js/bootstrap.min.js"></script>
 <script src="/_assets/js/validation.min.js"></script>
-<script src="/_assets/js/form_handler.js"></script>
+<script src="/_assets/js/custom_form_handler.js"></script>
 </body>
 </html>
