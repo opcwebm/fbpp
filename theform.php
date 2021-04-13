@@ -1,4 +1,8 @@
 <?php
+//
+//	Form Bootstrap Based and..filtered Wow !!!	
+//
+
 header( 'content-type: text/html; charset=utf-8');
 session_start();
 
@@ -12,7 +16,7 @@ $myfbpp = new FBPP();
 //POST processing...
 
 
-	if(isset($_POST['msg_submitted']) && strpos($_POST['message'],'http')===false && substr(trim($_POST['telexp']), 0, 1) != "8")
+	if(isset($_POST['msg_submitted']) && strpos($_POST['message'],'http')===false && substr(trim($_POST['phonenumber']), 0, 1) != "8")
 	{
 		//antispam Filtering
 		if(!(isset($_POST["FBPP_{$myfbpp->getHashInputKey()}"]) && $_POST["FBPP_{$myfbpp->getHashInputKey()}"]==$myfbpp->getHashData()))
@@ -21,9 +25,9 @@ $myfbpp = new FBPP();
 			exit;
 		}
 		
-		//Gathering $_POST variables values accordint context
+		//Gathering $_POST variables values according context or your personal rules
 		
-		//Sending Emails notifications if necessary BUT NOT in Sapmming contexts! VICTORY !!!
+		//Sending Emails notifications if necessary BUT NOT in Spamming contexts! VICTORY !!!
 		
 		FBPP::destroyInternalCredentials();
 	}	
@@ -118,7 +122,7 @@ $myfbpp = new FBPP();
 		 $.ajax({
 			type: 'post',
 			data: '_rfi='+$('input[id^=FBPP_]').attr('id'),
-			url: 'https://www.media-sante.com/_wp".$myfbpp->getWp().".php',
+			url: 'https://www.yourwebsite.com/_wp".$myfbpp->getWp().".php',
 			dataType : 'text',
 			success: function(ans)
 			{ let res=''; 
