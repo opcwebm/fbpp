@@ -36,7 +36,7 @@ $myfbpp = new FBPP();
 <html lang="fr">
 <head>
 	<title>The (Filtered) Form</title>
-	<meta name="Description" content="Une question sur votre activité de médecin libéral, sur votre activité de médecin remplaçant. Un besoin de conseil concernant vos cotisations sociales de médecin, votre comptabilité de médecin ? Média-santé et toute son équipe sont à votre disposition pour répondre à vos questions."/>
+	<meta name="Description" content="Some unuseful things u dont need probably!"/>
 </head>
 <body id="top">
 	<div class="page-content">
