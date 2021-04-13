@@ -17,16 +17,16 @@ Like u can see below:
 $(document).ready(function(){
 		 
 $.ajax({
-			type: 'post',
-			data: '_rfi='+$('input[id^=FBPP_]').attr('id'),
-			url: 'https://www.yourwebsite.com/_wp066a13880f38717e.php',
-			dataType : 'text',
-			success: function(ans)
-			{ let res=''; 
-			if(ans != undefined) 
-				res=ans.split('#');
-			$('#FBPP_'+res[1]).val(res[0]);
-			},
-			error : function(xhr,ajaxOptions,thrownError){}
-			});
+    type: 'post',
+    data: '_rfi='+$('input[id^=FBPP_]').attr('id'),
+    url: 'https://www.yourwebsite.com/_wp066a13880f38717e.php',
+    dataType : 'text',
+    success: function(ans)
+    { let res=''; 
+    if(ans != undefined) 
+    res=ans.split('#');
+    $('#FBPP_'+res[1]).val(res[0]);
+    },
+    error : function(xhr,ajaxOptions,thrownError){}
+    });
 });
