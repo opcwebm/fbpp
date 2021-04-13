@@ -12,13 +12,14 @@ This random page requests with a token (HashInput) the fbpp table to get the Has
 so when the form is initiating credentials for the form, the wp-random page is unusable BUT the link is inside your form.XD
 Like u can see below:
 
-<?php echo "<script type=\"text/javascript\">
-	 $(document).ready(function(){
+<script src="/_assets/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
 		 
-		 $.ajax({
+$.ajax({
 			type: 'post',
 			data: '_rfi='+$('input[id^=FBPP_]').attr('id'),
-			url: 'https://www.yourwebsite.com/_wp".$myfbpp->getWp().".php',
+			url: 'https://www.yourwebsite.com/_wp066a13880f38717e.php',
 			dataType : 'text',
 			success: function(ans)
 			{ let res=''; 
@@ -28,5 +29,4 @@ Like u can see below:
 			},
 			error : function(xhr,ajaxOptions,thrownError){}
 			});
-	 });
-	</script>"; ?>
+});
