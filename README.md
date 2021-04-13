@@ -14,3 +14,9 @@ so when the form is initiating credentials for the form, the wp-random page is u
 3) With the expiration handled through the fbpp class, i 've decided to enforce a sql deleting garbage systeme handled by a cron ;P
 
 */5 * * * * php /home/[your server profile name]/public_html/cron_clean_fbpp.php
+
+4) Then it lacks to integrate few lines to integrate my solution inside the target: theform.php
+Including the class, the filtering system within Post process piece of code,the lines  coming with the input hidden FBPP_ and the snippet zone handled with ajax.
+
+Don't miss the necessary librarys for the project (not included on my project here) ,Jquery, Bootstrap, JQuery Validation.
+So at the end, it remains your JS validation rules based on validation lib documentation. Enjoy!
