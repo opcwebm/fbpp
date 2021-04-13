@@ -11,3 +11,5 @@ RewriteRule ^_wp([0-9a-z]+)\.php$ _getmycv.php?pass=$1 [QSA,L]
 This random page requests with a token (HashInput) the fbpp table to get the HashData value using ajax Method (with unique usage Call).
 so when the form is initiating credentials for the form, the wp-random page is unusable BUT the link is inside your form.XD
 
+3) With the expiration handled through the fbpp class, i 've decided to enforce a sql deleting garbage systeme handled by a cron ;P
+*/5 * * * * php /home/[your server profile name]/public_html/cron_clean_fbpp.php
